@@ -4,22 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFHL Challenge</title>
+    <title>BFHL Challenge Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>BFHL Challenge</h1>
 
-        <textarea id="input" placeholder="Example: A->B,A->C,B->D"></textarea>
+        <h1>BFHL Challenge Dashboard</h1>
 
-        <button onclick="submitData()">
-            Submit
-        </button>
+        <div class="input-section">
 
-        <pre id="result"></pre>
+            <textarea id="input" placeholder="Example: A->B,A->C,B->D,C->E"></textarea>
+
+            <button onclick="submitData()">
+                Analyze Hierarchy
+            </button>
+
+        </div>
+
+        <div id="summary" class="summary-grid"></div>
+
+        <div id="hierarchies" class="hierarchy-container"></div>
+
+        <div id="errors" class="error-section"></div>
+
     </div>
 
     <script src="script.js"></script>
